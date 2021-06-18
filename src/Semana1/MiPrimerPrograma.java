@@ -1,5 +1,5 @@
 package MiPrimerPrograma;
-
+//asi se ponen comentarios
 public class MiPrimerPrograma {
 
     public static void main(String[] args) {
