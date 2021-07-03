@@ -36,7 +36,7 @@ public class Quiz1PrograTI {
             System.out.println("1=si  0=no");
             elegirQueso = escaner.nextInt();
             
-            int tamaño;
+            
             System.out.println("Tamaño de Pizza");
             System.out.println("1=Grande 0=Pequeña");
             tamaño = escaner.nextInt();
