@@ -34,21 +34,27 @@ public class Examen1 {
             }
             else if(numProvincia == 2){
                 nombreProvincia = "Alajuela";
+                poblacion = 848146;
             }
             else if(numProvincia == 3){
                 nombreProvincia = "Cartago";
+                poblacion = 490903;
             }
             else if(numProvincia == 4){
                 nombreProvincia = "Heredia";
+                poblacion = 433677;
             }
             else if(numProvincia == 5){
                 nombreProvincia = "Guanacaste";
+                poblacion = 326953;
             }
             else if(numProvincia == 6){
                 nombreProvincia = "Puntarenas";
+                poblacion = 410929;
             }
             else{
                 nombreProvincia = "Limon";
+                poblacion = 386862;
             }
             
         
@@ -90,19 +96,30 @@ public class Examen1 {
         System.out.println();
         System.out.println("Nombre de la empresa: " + nombreEmpresa);
         System.out.println("Provincia: " + nombreProvincia);
+        System.out.println("Poblacion: " + poblacion);
         System.out.println("Total de Trabajadores: " + numTotalTrabajadores);
         if(numTrabajadoresCovid >= 20){
             System.out.println("20 o mas trabajadores contagiados de COVID-19");
         }
         else{
-            System.out.println("Numero de contagiados Covid-19" + numTrabajadoresCovid);
+            System.out.println("Numero de contagiados Covid-19: " + numTrabajadoresCovid);
         }
-        System.out.println("Monto de ingreso al mes" + montoDeIngresoMes);
+        System.out.println("Monto de ingreso al mes: " + montoDeIngresoMes);
         
-        System.out.print("Credito total:");
+        System.out.print("Credito total: ");
         System.out.println(credito + nuevoCredito);
-        //todo perfecto hasta aqui
         
         
+        System.out.println();
+        System.out.println();
+        System.out.println("Desea saber cuanto monto le puede prestar a la empresa?");
+        System.out.println("1-Si o 2-No");
+        int siPrestar = escaner.nextInt();
+        if(siPrestar == 1){
+            int montoTotal;
+            montoTotal = (numTrabajadoresCovid / numTotalTrabajadores)*poblacion;
+            System.out.println("Le puede prestar: ");
+            System.out.println(montoTotal);
+        }
     }
 }
